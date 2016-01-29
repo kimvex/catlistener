@@ -38,7 +38,7 @@ En la seccion node podemos hacer uso de cualquier modulo para levantar nuestro s
 
 ### Uso de stylus
 ```js
-cat.stylus({js
+cat.stylus({
   options: ['compila','escucha', 'observa'],
   css: './app/staticos/css/',
   stylus: './app/staticos/stylus/estilo.styl'
