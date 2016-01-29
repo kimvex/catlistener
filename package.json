@@ -1,0 +1,17 @@
+{
+  "name": "catlistener",
+  "version": "0.0.3",
+  "description": "'Un automatizador de tareas y con comandos de terminal para poder ejecutar npm o git sin dejar de ejecutar el servidor u otro servicio'",
+  "main": "lib/catlistener",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin De la cruz Martinez",
+  "license": "ISC",
+  "dependencies":{
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.2",
+    "watchify": "^3.6.1",
+    "stylus": "^0.53.0"
+  }
+}
