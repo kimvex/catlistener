@@ -1,6 +1,6 @@
 {
   "name": "catlistener",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "'Un automatizador de tareas y con comandos de terminal para poder ejecutar npm o git sin dejar de ejecutar el servidor u otro servicio'",
   "main": "lib/catlistener",
   "scripts": {
@@ -8,10 +8,18 @@
   },
   "author": "Benjamin De la cruz Martinez",
   "license": "ISC",
-  "dependencies":{
+  "dependencies": {
     "babelify": "^7.2.0",
     "browserify": "^12.0.2",
     "watchify": "^3.6.1",
     "stylus": "^0.53.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimvex/catlistener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimvex/catlistener/issues"
+  },
+  "homepage": "https://github.com/kimvex/catlistener#readme"
 }
