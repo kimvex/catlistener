@@ -78,7 +78,7 @@ The use of Terminal Commands is actually ilimited, we can use most of the Git co
 To use this module, just create a file where put all previous that you want and it begin like the example:
 
 ```
-Node file created
+Node fileCreated
 ```
 
 As easy as that Catlistener Module will be executing.
