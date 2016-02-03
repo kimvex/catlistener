@@ -1,7 +1,7 @@
 {
   "name": "catlistener",
-  "version": "0.0.6",
-  "description": "'Un automatizador de tareas y con comandos de terminal para poder ejecutar npm o git sin dejar de ejecutar el servidor u otro servicio'",
+  "version": "0.0.7",
+  "description": "'A task automator, and whit terminal commands, to run NPM or Git, without leaving the server or other service.'",
   "main": "lib/catlistener",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

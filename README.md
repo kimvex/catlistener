@@ -1,6 +1,7 @@
 # Catlistener
 ![imagen](https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12669569_997263900319311_4752086437610440860_n.jpg?oh=e7cfe2f13100e845f08842d33313a2c8&oe=5727E541)
 
+##English
 ## Instalation
 
 ### npm
@@ -82,11 +83,8 @@ Node file created
 
 As easy as that Catlistener Module will be executing.
 
-`
------------------------------------------------------------------
-`
-
 ##Español
+Un automatizador de tareas y con comandos de terminal para poder ejecutar npm o git sin dejar de ejecutar el servidor u otro servicio.
 
 ## Instalación
 
