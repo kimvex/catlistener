@@ -1,5 +1,5 @@
 # Catlistener
-![imagen](https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12669569_997263900319311_4752086437610440860_n.jpg?oh=e7cfe2f13100e845f08842d33313a2c8&oe=5727E541)
+![imagen](https://raw.githubusercontent.com/kimvex/tweet-service/master/chalistener.png)
 
 ##English
 ## Instalation
@@ -52,9 +52,9 @@ In css add the route where our css compiled going to be saved.
 
 In stylus add the route of our styl file.
 
-## Using Broserify
+## Using Browserify
 ```js
-cat.broserify({
+cat.browserify({
   original: './app/staticos/js/script.js',
   compilado: './app/staticos/js/compilado.js',
   presets: true
@@ -66,8 +66,23 @@ In "compilado" put the direction and the name of our Js files compilated in Ecma
 
 "Presets" it´s able to put if you want, use Ecmascript 6 compilated with Babelify
 
-IMPORTANT: For this function to Broserify works must download babel-preset-es2015
+IMPORTANT: For this function to Browserify works must download babel-preset-es2015
 
+Important Note: To use the Stylus and Browserify modules, these modules must be installed separately.
+
+In the case of stylus:
+
+`npm install -g stylus`
+
+In the case of Browserify you need to have downloaded more modules such as:
+
+`npm install babelify`
+
+`npm install babel-preset-ES2015`
+
+`npm install browserify`
+
+`npm install -g watchify`
 
 ## Terminal Commands 
 
@@ -136,9 +151,9 @@ En `css` colocamos la dirección donde se guardara nuestro css compilado.
 
 En `stylus` colocamos la dirección de nuestro archivo styl.
 
-### Uso de broserify
+### Uso de browserify
 ```js
-cat.broserify({
+cat.browserify({
   original: './app/staticos/js/script.js',
   compilado: './app/staticos/js/compilado.js',
   presets: true
@@ -150,7 +165,23 @@ En `compilado` colocamos la dirección y el nombre de nuestros js compilado en e
 
 En `presets` podemos colocar si queremos que use ecmascript 6 compilado con babelify
 
-NOTA: Para que la función de broserify funcione debes de descargar babel-preset-es2015
+NOTA: Para que la función de browserify funcione debes de descargar babel-preset-es2015
+
+Nota importante: Para poder hacer uso de los modulos Stylus y Browserify, debera instalar esos modulos por separado.
+
+En el caso de stylus:
+
+`npm install stylus -g`
+
+En el caso de Browserify usted necesita tener descargado más modulos como lo son:
+
+`npm install babelify`
+
+`npm install babel-preset-es2015`
+
+`npm install browserify`
+
+`npm install watchify -g`
 
 ## Comandos de terminal
 

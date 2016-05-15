@@ -1,6 +1,6 @@
 {
   "name": "catlistener",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "'A task automator, and whit terminal commands, to run NPM or Git, without leaving the server or other service.'",
   "main": "lib/catlistener",
   "scripts": {
@@ -8,12 +8,6 @@
   },
   "author": "Benjamin De la cruz Martinez",
   "license": "ISC",
-  "dependencies": {
-    "babelify": "^7.2.0",
-    "browserify": "^12.0.2",
-    "watchify": "^3.6.1",
-    "stylus": "^0.53.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kimvex/catlistener.git"
