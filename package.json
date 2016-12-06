@@ -1,6 +1,6 @@
 {
   "name": "catlistener",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "'A task automator, and whit terminal commands, to run NPM or Git, without leaving the server or other service.'",
   "main": "lib/catlistener",
   "scripts": {
