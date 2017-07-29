@@ -82,7 +82,7 @@ cat.browserify({
   presets: ['es2015','react', 'stage-2']
 });
 ```
-When using the multi bundle we added a new `common property in which we save all the modules that share the files, avoiding to reload those modules.
+When using the multi bundle we added a new `common` property in which we save all the modules that share the files, avoiding to reload those modules.
 
 More information on multi-blundle operation
 [Multi-bundle](https://webpack.github.io/docs/multiple-entry-points.html)
