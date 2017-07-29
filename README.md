@@ -1,7 +1,7 @@
 # Catlistener
 ![imagen](https://raw.githubusercontent.com/kimvex/tweet-service/master/chalistener.png)
 
-##English
+## English
 ## Instalation
 
 ### npm
@@ -31,11 +31,11 @@ In enviroment section, place the enviroment variables that be useful for our pro
 
 In the Node section we can use of any module for start our server: 
 
-####node
+#### node
 
-####supervisor
+#### supervisor
 
-####babel-node
+#### babel-node
 
 
 ### Using stylus
@@ -113,7 +113,7 @@ In the case of Browserify you need to have downloaded more modules such as:
 
 The use of Terminal Commands is actually ilimited, we can use most of the Git commands, whitout leaving to get response about pour server and stylus, similarly we can install npm modules whitout stop the server.
 
-##Implementation
+## Implementation
 
 To use this module, just create a file where put all previous that you want and it begin like the example:
 
@@ -123,7 +123,7 @@ Node fileCreated
 
 As easy as that Catlistener Module will be executing.
 
-##Español
+## Español
 Un automatizador de tareas y con comandos de terminal para poder ejecutar npm o git sin dejar de ejecutar el servidor u otro servicio.
 
 ## Instalación
@@ -143,7 +143,7 @@ cat.server({
     ENV: dev
   },
   node: 'node',
-  debug: '-debug',
+  debug: '--debug',
   app: 'server'
 });
 
@@ -155,11 +155,11 @@ En la sección de enviroment colocamos las variables de entorno que utilizaremos
 
 En la sección `node` podemos hacer uso de cualquier módulo para levantar nuestro servidor:
 
-####node
+#### node
 
-####supervisor
+#### supervisor
 
-####babel-node
+#### babel-node
 
 
 ### Uso de stylus
