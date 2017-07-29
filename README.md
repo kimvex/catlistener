@@ -19,7 +19,7 @@ cat.server({
     ENV: dev
   },
   node: 'node',
-  debug: '-debug',
+  debug: '--debug',
   app: 'server'
 });
 
@@ -57,7 +57,7 @@ In stylus add the route of our styl file.
 cat.browserify({
   original: './app/staticos/js/script.js',
   compilado: './app/staticos/js/compilado.js',
-  presets: true
+  presets: ['es2015']
 });
 ```
 In "original" put the direction of our original Js.
@@ -66,7 +66,32 @@ In "compilado" put the direction and the name of our Js files compilated in Ecma
 
 "Presets" it´s able to put if you want, use Ecmascript 6 compilated with Babelify
 
-IMPORTANT: For this function to Browserify works must download babel-preset-es2015
+IMPORTANT: For this function to Browserify works must download babel-preset-es2015 or other version of babel.
+
+In addition we can use multi bundle, which allows us to compile different files that we pass through an array.
+
+In the same way we can pass an array of presets that allow us to extend the power of babel.
+
+Example:
+
+```js
+cat.browserify({
+  original: ['./app/static/js/escript.js', './app/static/js/inicio/inicio.js'],
+  compilado: ['./app/static/js/script.js', './app/static/js/inicio.js'],
+  common: ['./app/static/js/global.js'],
+  presets: ['es2015','react', 'stage-2']
+});
+```
+When using the multi bundle we added a new `common property in which we save all the modules that share the files, avoiding to reload those modules.
+
+More information on multi-blundle operation
+[Multi-bundle](https://webpack.github.io/docs/multiple-entry-points.html)
+
+In order to use multi bundle we must install a new module:
+
+`npm install factor-bundle`
+
+Now we have support for React.js but it is necessary to install `babel-preset-react` and sweat the preset `'react'`.
 
 Important Note: To use the Stylus and Browserify modules, these modules must be installed separately.
 
@@ -156,7 +181,7 @@ En `stylus` colocamos la dirección de nuestro archivo styl.
 cat.browserify({
   original: './app/staticos/js/script.js',
   compilado: './app/staticos/js/compilado.js',
-  presets: true
+  presets: ['es2015']
 });
 ```
 En `original` colocamos la dirección de nuestro js original.
@@ -165,7 +190,33 @@ En `compilado` colocamos la dirección y el nombre de nuestros js compilado en e
 
 En `presets` podemos colocar si queremos que use ecmascript 6 compilado con babelify
 
-NOTA: Para que la función de browserify funcione debes de descargar babel-preset-es2015
+NOTA: Para que la función de browserify funcione debes de descargar babel-preset-es2015 u otra version de babel.
+
+Además, podemos usar multi bundle, lo que nos permite compilar diferentes archivos que pasamos a través de un array.
+
+De la misma manera podemos pasar una serie de presets que nos permiten extender el poder de babel.
+
+Ejemplo:
+
+```js
+cat.browserify({
+  original: ['./app/static/js/escript.js', './app/static/js/inicio/inicio.js'],
+  compilado: ['./app/static/js/script.js', './app/static/js/inicio.js'],
+  common: ['./app/static/js/global.js'],
+  presets: ['es2015','react', 'stage-2']
+});
+```
+
+Al usar el multi bundle agregamos una nueva propiedad `common en el cual guardamos todos los módulos que comparten los archivos, evitando volver a cargar esos modulos.
+
+Mas informacion del funcionamiento de multi blundle.
+[Multi-bundle](https://webpack.github.io/docs/multiple-entry-points.html)
+
+Para poder hacer uso de multi bundle debemos instalar un nuevo módulo.
+
+`npm install factor-bundle`
+
+Ahora tenemos soporte para React.js pero es necesario instalar `babel-preset-react` y suar el el preset `'react'`.
 
 Nota importante: Para poder hacer uso de los modulos Stylus y Browserify, debera instalar esos modulos por separado.
 
